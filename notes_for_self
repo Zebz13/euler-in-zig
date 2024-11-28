@@ -1,0 +1,30 @@
+use pointer to bypass const value in functions when trying to update.
+// Eg: levelUp(&glorp, reward_xp);
+// fn levelUp(character_access: *Character, xp: u32) void {
+//     character_access.experience += xp;
+// }
+
+// Are all of these pointer types starting to get confusing?
+//
+//     FREE ZIG POINTER CHEATSHEET! (Using u8 as the example type.)
+//   +---------------+----------------------------------------------+
+//   |  u8           |  one u8                                      |
+//   |  *u8          |  pointer to one u8                           |
+//   |  [2]u8        |  two u8s                                     |
+//   |  [*]u8        |  pointer to unknown number of u8s            |
+//   |  [*]const u8  |  pointer to unknown number of immutable u8s  |
+//   |  *[2]u8       |  pointer to an array of 2 u8s                |
+//   |  *const [2]u8 |  pointer to an immutable array of 2 u8s      |
+//   |  []u8         |  slice of u8s                                |
+//   |  []const u8   |  slice of immutable u8s                      |
+//   +---------------+----------------------------------------------+
+
+since I don't understand enum, pointers, arrays, structs, slices and whatevers comes from *[]? need to write programs for those
+
+pytorch installation notes
+- quick run- go site- pip or conda install
+IMP --- will not install nvcc or cuda for separate use
+
+personal - install cuda- add to path- build from source(suffer) -to be done later
+
+
