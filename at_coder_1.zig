@@ -36,4 +36,5 @@ pub fn read_input(input: []u8, number_of_inputs: i32) []u8 {
     input = undefined;
     const stdin = std.io.getStdIn().reader();
     var stream = std.io.fixedBufferStream(&input);
+    const input_holder 
 }
